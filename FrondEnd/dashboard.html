@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Poke Negocio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="topbar">
+        <h1>Panel principal - Poke Negocio</h1>
+        <button id="logoutBtn" class="btn">Cerrar sesión</button>
+      </div>
+
+      <p class="note">Bienvenido, <span id="userEmail"></span></p>
+      <hr>
+
+      <h2>Buscar Pokémon</h2>
+      <p>Introduce el nombre o número del Pokémon:</p>
+
+      <input type="text" id="pokeInput" placeholder="Ej: pikachu o 25">
+      <button id="searchPokeBtn" class="btn">Buscar Pokémon</button>
+
+      <div id="pokeResult" style="margin-top:20px"></div>
+
+      <hr>
+
+      <h2>Ejemplo de API genérica</h2>
+      <button id="apiExampleBtn" class="btn">Probar API de ejemplo</button>
+      <pre id="apiOutput"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
